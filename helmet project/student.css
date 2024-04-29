@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 300;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 110vh;
+  background-color: #0b6c90;
+}
+
+/*header*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #894bed;
+  color:black;
+}
+
+header .logo img {
+  height: 60px;
+  margin: 20px;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+header ul li {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+header ul li a {
+  color:black;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+header ul li i {
+  margin: 10px;
+  font-size: 24px;
+}
+
+header ul li input {
+  border: none;
+  padding: 5px;
+  
+}
+
+/*navigation*/
+.navigation {
+  display: none;
+  flex-direction: row;
+  background-color: #f1a0a0;
+  position: relative;
+}
+
+.navigation .nav-container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+
+.show-nav {
+  display: flex;
+}
+
+.nav-sub {
+  border-bottom: 5px solid #2b7a78;
+  position: relative;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.short {
+
+  color: #17252a;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.long{
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+  background-color: #feffff;
+  color: #17252a;
+  z-index: 1000;
+  display: none;
+  top: 100%;
+}
+
+.nav-sub.show .long {
+  display: block;
+}
+
+.long ul {
+  list-style: none;
+  padding: 0;
+}
+
+.long ul li {
+  border-bottom: 1px solid #e1e1e1;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.long ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #17252a;
+  display: block;
+}
+
+.long ul li a:hover {
+  font-weight: bold;
+}
+
+.short h4 {
+  font-size: 20px;
+}
+
+.nav-sub.show .short img {
+  transform: rotate(180deg);
+}
+
+.short img{
+  width: 20px;
+  height: 20px;
+}
+  
+/*card-body*/
+.card-containers{
+    box-sizing: border-box;
+    display: flex;
+    padding: 5%;
+    
+
+}
+
+.home_card{
+    width: 500px;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 4px black;
+}
+  
+.card-body{
+  padding: 5px;
+  background-color: rgb(229, 247, 201);
+
+}
+.card_title{
+  text-decoration:underline;
+  font-size: 2rem;
+  text-align: center;
+  cursor: pointer;
+
+}
+.card-body .card-desc{
+  text-align: justify;
+  line-height: 1.5;
+}
+ .home_card:hover{
+  box-shadow: 6px 12px 10px white;
+  transition: 0.6s;
+  cursor: pointer;
+}
+ .home_card2{
+  width: 500px;
+  margin: 10px;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 4px black;
+  }
+
+.card-body2{
+padding: 5px;
+background-color: rgb(244, 182, 202);
+
+}
+.card_title2{
+  text-decoration:underline;
+  font-size: 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+.card-body2 .card-desc2{
+text-align: justify;
+line-height: 1.5;
+}
+.home_card2:hover{
+box-shadow: 6px 12px 10px white;
+transition: 0.6s;
+cursor: pointer;
+
+}
+
+.home_card3{
+  width: 500px;
+  margin: 10px;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 4px black;
+  }
+
+.card-body3{
+padding: 5px;
+background-color: rgb(167, 211, 225);
+
+}
+.card_title3{
+  text-decoration:underline;
+  font-size: 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+.card-body3 .card-desc3{
+text-align: justify;
+line-height: 1.5;
+}
+.home_card3:hover{
+box-shadow: 6px 12px 10px rgb(237, 234, 234);
+transition: 0.6s;
+cursor: pointer;
+}
+
+.footer{
+  background-color: rgb(20, 20, 19);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+
+}
+
+.footer-menu a{
+  display: block;
+  margin: 15px 0;
+  font-size: 1rem;
+  color: white;
+}
+
+.footer-menu a:hover{
+  color: rgb(147, 125, 125);
+}
+
+.footer::after{
+  display: table;
+  content: '';
+  clear: both;
+}
+.achievemnet-contact{
+  padding: 1% 7%;
+  background-color: #39a4ac;
+  color: white;
+}
+
+.contact{
+  text-align: center;
+}
+
+.contact input, textarea{
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+}
+
+.contact button{
+  border: none;
+  border-radius: 12px;
+  background-color: #052d2f;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  margin: 10px;
+  width: 100px;
+}
+
+
+.contact-links{
+  text-align: center;
+}
+
+.media-buttons .btn{
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 32px;
+  padding: 5px;
+  margin: 10px;
+  width: 50px;
+  background-color: white;
+}
+.btn:hover{
+  background-color: gray;
+}
+
+.achievemnet-contact::after{
+  clear: both;
+  display: table;
+  content: '';
+}
+/*Responsive*/
+@media only screen and (max-width: 768px) {
+  header ul li {
+    margin-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header .logo img {
+    height: 40px;
+    margin: 10px;
+  }
+
+  header ul li {
+    margin-right: 10px;
+  }
+
+  .card-containers {
+    padding: 10px;
+  }
+
+  .home_card {
+    width: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+    margin: 10px 0;
+  }
+
+  .card-body {
+    padding: 5px;
+  }
+
+  .card_title {
+    font-size: 1.5rem;
+  }
+
+  .card-body .card-desc {
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    padding: 10px;
+    font-size: 0.7rem;
+  }
+}

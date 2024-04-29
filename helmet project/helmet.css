@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    width: 100%;
+    background-color: rgb(84, 82, 80);
+}
+.header{
+    width: 100%;
+    background-color: #fff;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header ul li{
+    display: inline-block;
+    list-style-type: none;
+}
+.header ul li a{
+text-decoration: none;
+padding: 15px;
+font-size: 25px;
+font-weight: 600px;
+color: #444;
+}

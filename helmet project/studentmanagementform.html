@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management</title>
+  <link rel="stylesheet" href="studentmanagement.css">
+</head>
+<body>
+  <h1>Student Management Form</h1>
+  <form id="studentForm" action="student.html" method="post">
+    <label for="studentId">Student ID:</label><br>
+    <input type="text" id="studentId" name="studentId" required><br>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label for="billAmount">Bill Amount:</label><br>
+    <input type="number" id="billAmount" name="billAmount" required><br>
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" required><br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required><br>
+   
+  </form>
+  <div class="button">
+    <button onclick="createStudent()">Create</button>
+    <button onclick="readStudent()">Read</button>
+    <button onclick="updateStudent()">Update</button>
+    <button onclick="deleteStudent()">Delete</button><br><br>
+    <button id="butt" onclick="submit()" >Submit</button>
+  </div>
+</div>
+
+  <script src="studentmanagementform.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+/* studentmanagement.css */
+
+/* Body styles */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #6d6868bc;
+  margin: 0;
+  padding: 0;
+  color: #020202;
+}
+
+/* Container styles */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ddd3a7;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h1 {
+  text-align: center;
+}
+
+/* Form styles */
+form {
+  margin-left: 30%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],input[type="number"],input[type="password"] {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #7f9ea1;
+  border-radius: 5px;
+}
+
+/* Button styles */
+.button {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #1c2227;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #652ecb;
+}
+#butt:hover {
+  background-color: rgb(220, 157, 157);
+  
+}
+
